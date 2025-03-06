@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { saveAs } from "file-saver";
 import "./ImageEditor.css";
+import { Helmet } from "react-helmet";
+
+
 
 const ImageEditor = () => {
   const [images, setImages] = useState([]); // State për imazhet e ngarkuara
@@ -78,7 +81,11 @@ const ImageEditor = () => {
   };
 
   return (
+    
+    
     <div className="container">
+      
+      <title>Image Blur</title>
       <div className="controls">
         <input
           type="file"
